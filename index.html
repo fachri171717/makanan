@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Pemesanan Makanan Online - Makananku</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="container">
+    <nav aria-label="Primary navigation">
+      <div class="logo" tabindex="0">Makananku</div>
+      <ul class="nav-list">
+        <li><a href="#hero" tabindex="0">Beranda</a></li>
+        <li><a href="#tentang" tabindex="0">Tentang</a></li>
+        <li><a href="#menu" tabindex="0">Menu</a></li>
+        <li><a href="#contact" tabindex="0">Kontak</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="hero container" id="hero" role="banner">
+  <h1>Selamat Datang di Warung <br> Makananku</h1>
+          <p>Tempat terbaik untuk menikmati Makanan lezat!</p>
+</section>
+<section id="tentang" class="container-section-padding">
+        <div class="container">
+          <h2>Tentang Kami</h2>
+          <p>
+            "Warung Makananku adalah warung makan yang menyajikan hidangan tradisional Indonesia dengan cita rasa yang lezat dan otentik. Terletak di jantung kabupaten tasikmalaya, Warung Sejahtera menawarkan suasana yang hangat dan ramah,
+            serta pelayanan yang prima. Nikmati berbagai hidangan lezat dengan harga yang terjangkau di Warung Sejahtera!"
+          </p>
+          <p>Datang dan rasakan suasana hangat serta hidangan lezat kami!</p>
+        </div>
+      </section>
+
+<section class="menu container" id="menu" role="region" aria-label="Menu makanan">
+  <h2 style="text-align:center; margin-bottom:2rem; font-weight:700; font-size:2rem; color: var(--color-text-primary);">Pilihan Menu Kami</h2>
+  <div class="menu-grid" role="list">
+    <article class="food-card" role="listitem" tabindex="0" aria-label="Nasi Goreng Spesial">
+      <img src="nasigoreng.jpg" alt="nasiGoreng Spesial" class="food-image" />
+      <div class="food-info">
+        <h3 class="food-title">Nasi Goreng Spesial</h3>
+        <p class="food-desc">Nasi goreng lezat khas Indonesia dengan telur, ayam, dan bumbu rempah.</p>
+        <div class="food-price" aria-label="Harga seporsi Nasi Goreng Spesial">Rp 13.000</div>
+        <button class="btn-order" aria-haspopup="dialog" aria-controls="orderModal" aria-expanded="false" data-name="Nasi Goreng Spesial" data-price="13.000">Pesan</button>
+      </div>
+    </article>
+
+    <article class="food-card" role="listitem" tabindex="0" aria-label="Mie Ayam Jamur">
+      <img src="sate-ayam.jpg" alt="sate ayam" class="food-image" />
+      <div class="food-info">
+        <h3 class="food-title">Sate Ayam</h3>
+        <p class="food-desc">Menggunakan ayam pilihan dan segar.</p>
+        <div class="food-price" aria-label="Harga seporsi Mie Ayam Jamur">Rp 16.000</div>
+        <button class="btn-order" aria-haspopup="dialog" aria-controls="orderModal" aria-expanded="false" data-name="Mie Ayam Jamur" data-price="16.000">Pesan</button>
+      </div>
+    </article>
+
+    <article class="food-card" role="listitem" tabindex="0" aria-label="Sate Ayam Madura">
+      <img src="mieayam.jpeg" alt="mieayam" class="food-image" />
+      <div class="food-info">
+        <h3 class="food-title">Mie Ayam</h3>
+        <p class="food-desc">Mie ayam dengan mie yang kenyal dan pas di mulut.</p>
+        <div class="food-price" aria-label="Harga seporsi Sate Ayam Madura">Rp 14.000</div>
+        <button class="btn-order" aria-haspopup="dialog" aria-controls="orderModal" aria-expanded="false" data-name="Sate Ayam Madura" data-price="14.000">Pesan</button>
+      </div>
+    </article>
+
+    <article class="food-card" role="listitem" tabindex="0" aria-label="Es Teh Manis">
+      <img src="es teh.jpg" alt="Es Teh Manis" class="food-image" />
+      <div class="food-info">
+        <h3 class="food-title">Es Teh Manis</h3>
+        <p class="food-desc">Minuman dingin manis segar untuk menemani makanmu.</p>
+        <div class="food-price" aria-label="Harga segelas Es Teh Manis">Rp 6.000</div>
+        <button class="btn-order" aria-haspopup="dialog" aria-controls="orderModal" aria-expanded="false" data-name="Es Teh Manis" data-price="6.000">Pesan</button>
+      </div>
+    </article>
+
+    <article class="food-card" role="listitem" tabindex="0" aria-label="Es Teh Manis">
+      <img src="mangga.jpg" alt="Jus Mangga" class="food-image" />
+      <div class="food-info">
+        <h3 class="food-title">Jus Mangga</h3>
+        <p class="food-desc">Minuman dingin manis segar untuk menemani makanmu.</p>
+        <div class="food-price" aria-label="Harga segelas Jus Mangga">Rp 10.000</div>
+        <button class="btn-order" aria-haspopup="dialog" aria-controls="orderModal" aria-expanded="false" data-name="Jus Mangga" data-price="10.000">Pesan</button>
+      </div>
+    </article>
+
+    <article class="food-card" role="listitem" tabindex="0" aria-label="Jus Alpukat">
+      <img src="alpukat.jpg" alt="Jus Alpukat" class="food-image" />
+      <div class="food-info">
+        <h3 class="food-title">Jus Alpukat</h3>
+        <p class="food-desc">Minuman dingin manis segar untuk menemani makanmu.</p>
+        <div class="food-price" aria-label="Harga segelas Jus Alpukat">Rp 10.000</div>
+        <button class="btn-order" aria-haspopup="dialog" aria-controls="orderModal" aria-expanded="false" data-name="Jus Alpukat" data-price="10.000">Pesan</button>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- Popup Modal -->
+<div
+  class="modal-backdrop"
+  id="orderModal"
+  role="dialog"
+  aria-modal="true"
+  aria-labelledby="modalTitle"
+  aria-hidden="true"
+  tabindex="-1"
+>
+  <div class="modal">
+    <div class="modal-header">
+      <h2 class="modal-title" id="modalTitle">Form Pemesanan dan Pesan Khusus</h2>
+      <button class="btn-close" id="closeOrderBtn" aria-label="Tutup form pemesanan">&times;</button>
+    </div>
+    <form id="orderForm" novalidate>
+      <label for="foodName">Menu</label>
+      <input type="text" id="foodName" name="foodName" readonly />
+
+      <label for="customerName">Nama Lengkap</label>
+      <input
+        type="text"
+        id="customerName"
+        name="customerName"
+        placeholder="Masukkan nama lengkap"
+        required
+        autocomplete="name"
+        aria-required="true"
+      />
+
+      <label for="customerEmail">Email</label>
+      <input
+        type="email"
+        id="customerEmail"
+        name="customerEmail"
+        placeholder="Masukkan email"
+        required
+        autocomplete="email"
+        aria-required="true"
+      />
+
+      <label for="quantity">Jumlah</label>
+      <input
+        type="number"
+        id="quantity"
+        name="quantity"
+        value="1"
+        min="1"
+        max="20"
+        required
+        aria-required="true"
+      />
+      <label for="level">Level pedas</label>
+      <input
+        type="number"
+        id="level"
+        name="level"
+        value="0"
+        min="0"
+        max="8"
+        required
+        aria-required="true"
+      />
+
+      <label for="customerMessage">Pesan Khusus (Opsional)</label>
+      <textarea
+        id="customerMessage"
+        name="customerMessage"
+        rows="4"
+      ></textarea>
+
+      <button type="submit" class="btn-submit">Konfirmasi Pesanan</button>
+    </form>
+  </div>
+</div>
+      <section id="contact" class="contact">
+        <div class="container">
+          <h2>Kontak Kami</h2>
+          <p><i class="fas fa-map-marker-alt"></i> Alamat: Jl.simpang No. 123, kab.tasikmalaya</p>
+          <p><i class="fas fa-phone"></i> Telepon: (021) 123-4567</p>
+          <p><i class="fas fa-envelope"></i> Email: info@warungmakananku.com</p>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/share/15jp6MaRML/"><img src="fb-removebg-preview.png" alt="Facebook"></i></a>
+            <a href="https://www.instagram.com/fahriimff?igsh=MzN4YzU0MnBqbW15"><img src="ig-removebg-preview.png" alt="Instagram"></i></a>
+            <a href="#" ><img src="x-removebg-preview.png" alt="X"></i></a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2025 warungmakananku.</p>
+      </div>
+    </footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
